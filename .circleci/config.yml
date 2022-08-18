@@ -32,7 +32,7 @@ jobs:
             docker tag udagram-frontend tarakuds/udagram-frontend:v2
 
             docker build -t udagram-reverseproxy ./udagram-reverseproxy
-            docker tag udagram-reverseproxy tarakuds/udagram-reverseproxy:v2
+            docker tag udagram-reverseproxy tarakuds/udagram-reverseproxy:v3
 
             echo "-------- All images succesfully built----------"
 
@@ -45,7 +45,7 @@ jobs:
             docker push tarakuds/udagram-api-feed:v1
             docker push tarakuds/udagram-api-user:v1
             docker push tarakuds/udagram-frontend:v2
-            docker push tarakuds/udagram-reverseproxy:v2
+            docker push tarakuds/udagram-reverseproxy:v3
 
 workflows:
   default:
